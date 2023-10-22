@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>机试第八题</title>
+	<style>
+		.guide{
+			position: fixed;
+			top: 0;
+			left: 0;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 80px;
+			background: rgba(255,210,80,1.00);
+			list-style-type: none;
+			overflow: hidden;
+		}
+		.more{
+			position: absolute;
+			top:calc(50vh - 20px);
+			display: block;
+			height: 36px;
+			width: 120px;
+			color: aliceblue;
+			border: 1px solid aliceblue;
+			text-decoration: none;
+			border-radius: 3px;
+			font-size: 16px;
+			text-align: center;
+			padding-top: 15px;
+			transition: background 0.3s;
+		}
+		.more:hover{
+			background: rgba(159,159,159,1.00);
+		}
+		footer{
+			position: fixed;
+			bottom: 0;
+			left:0;
+			color: aliceblue;
+			background:black;
+			width:100%;
+			height: 10%;
+			display: flex;
+			justify-content: center;
+		}
+		footer p{
+			margin:calc(40px - 10px) auto;
+		}
+		li{
+			display: inline;
+			float:left;
+		}
+		li .title{
+			display: block;
+			width: 40vw;
+			margin:calc(40px - 25px) auto;
+			color: aliceblue;
+			font-size: 30px;
+			font-weight: bold;
+			text-decoration: none;
+			text-align: center
+		}
+		li .button{
+			display: block;
+			width: 15vw;
+			margin:calc(40px - 13px) auto;
+			color: aliceblue;
+			font-size: 16px;
+			text-decoration: none;
+		}
+		li .icon{
+			content: &#9776;
+			margin:calc(40px - 25px) auto;
+			float: left;
+			font-size: 30px;
+			display: none;
+			text-decoration: none;
+			color: aliceblue;
+		}
+		body{
+			background: rgba(71,66,57,0.8)
+		}
+		h1{
+			position: absolute;
+			color: aliceblue;
+			top:25%;
+			font-size: 45px;
+		}
+		@media screen and (max-width:600px){
+			.guide li:not(:nth-child(-n+2)){
+				display:none;
+			}
+			.guide{
+				display: flex;
+				justify-content: center;
+			}
+			.guide li a.icon{
+				position: absolute;
+				left: 10px;
+				display: block;
+			}
+			h1{
+				font-size:26px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<ul class="guide">
+		<li><a class="icon" href="#0">&#9776</a></li>
+		<li><a class="title" href="#0">木犀前端</a></li>
+		<li><a class="button" href="#1">最新消息</a></li>
+		<li><a class="button" href="#1">关于我们</a></li>
+		<li><a class="button" href="#1">组员列表</a></li>
+		<li><a class="button" href="#1">学习规划</a></li>
+	</ul>
+	
+	<div style="display: flex;justify-content: center">
+		<h1>欢迎来到木犀2023秋招机试!</h1>
+		<a class="more" href="#0">了解更多</a>
+	</div>
+	<footer><p>Copyright © 2023 木犀前端 All Rights Reserved.</p></footer>
+</body>
+</html>

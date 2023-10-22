@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>机试第一题</title>
+	<style>
+		form{
+			position: relative;
+			width: calc(100% - 20px);
+			height: calc(100% - 20px);
+			margin: 0% auto;
+			padding: 0px;
+		}
+		.container{
+			display: flex;
+			width: 50%;
+			height: 75vh;
+			margin: 10vh auto;
+			padding:0 20px;
+			box-shadow: -3px 3px 5px rgba(206,206,206,0.5);
+			border:1px solid rgba(206,206,206,1.00);
+			border-radius: 5px;
+			overflow-y: scroll;
+		}
+		.center{
+			width: 100%;
+			margin: 7px auto;
+			padding: 7px;
+		}
+		.flex-container{
+			display: flex;
+			flex-direction: column;
+			height: 20%;
+			justify-content: space-around;
+		}
+		.comment{
+			width:100%;
+			height: 40%;
+			position: relative;
+			top:7px;
+			resize:none;
+		}
+		.sub{
+			width:60%;
+			height:35px;
+			margin: 7px auto;
+			background: rgba(54,122,247,1.00);
+			color: aliceblue;
+			border: 1px solid rgba(214,214,214,1.00);
+			border-radius: 3px;
+			position: relative;
+		}
+		.box{
+			position: relative;
+			bottom: 0; 
+			display: flex;
+			justify-content: center;
+			padding:20px;
+			height: 40px; 
+			width: calc(100% - 20px);
+			background: rgba(255,255,255,1.00)
+		}
+		.ss{
+			background: rgba(67,180,255,1.00);
+		}
+		#light{
+			border:1px solid rgba(174,174,174,1.00);
+			border-radius: 3px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<form>
+				<h2 style="text-align: center">招新の表单</h2>
+				姓名：
+				<input class="center" id="light">
+				<div class="flex-container">
+					<div>
+						<span style="font-weight: bold;">爱好：
+							<input type="checkbox" name="hobby" value="sleep" disabled>睡觉
+							<input type="checkbox" name="hobby" velue="learn" class="ss">学前端
+							<input type="checkbox" name="hobby" velue="eat">吃吃吃
+						</span>
+					</div>
+					<div>
+						<span style="font-weight: bold;">性别：
+							<input type="radio" name="sex" value="sleep">男
+							<input type="radio" name="sex" velue="learn">女
+							<input type="radio" name="sex" velue="eat">武装直升机
+						</span>
+					</div>
+				</div>
+				<div style="position: relative;top:7px;">
+					<span style="font-weight: bold;">评论：</span><br>
+						<textarea rows="20" cols="40" class="comment" ></textarea>
+					<div style="height: 10vh"></div>
+				</div>
+			<footer style="position: sticky;bottom: 0"><div class="box">
+					<input type="submit" class="sub">
+				</div>
+			</footer>
+		</form>
+	</div>
+</body>
+</html>

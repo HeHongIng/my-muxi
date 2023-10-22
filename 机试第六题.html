@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>机试第六题</title>
+	<style>
+		div{
+			color: aliceblue;
+			font-size: 30px;
+			text-align: center;
+		}
+		.grid-container{
+			width: 100%;
+			height: calc(100vh - 20px);
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 1fr 1fr 1fr 1fr;
+			grid-gap: 20px;
+		}
+		.one{
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 1;
+			grid-row-end: 2;
+			background: rgba(52,219,185,1.00);
+		}
+		.two{
+			grid-column-start: 2;
+			grid-column-end: 4;
+			grid-row-start: 1;
+			grid-row-end: 3;
+			background: rgba(128,177,166,1.00);
+		}
+		.three{
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 2;
+			grid-row-end: 5;
+			background: rgba(192,177,122,1.00);
+		}
+		.four{
+			grid-column-start: 3;
+			grid-column-end: 4;
+			grid-row-start: 3;
+			grid-row-end: 4;
+			background:rgba(203,240,255,1.00);
+		}
+		.five{
+			grid-column-start: 2;
+			grid-column-end: 3;
+			grid-row-start: 3;
+			grid-row-end: 5;
+			background:rgba(228,205,176,1.00);
+		}
+		.six{
+			grid-column-start: 3;
+			grid-column-end: 4;
+			grid-row-start: 4;
+			grid-row-end: 5;
+			background: rgba(227,175,160,1.00);
+		}
+	</style>
+</head>
+
+<body>
+	<div class="grid-container">
+		<div class="one">One</div>
+		<div class="two">Two</div>
+		<div class="three">Three</div>
+		<div class="four">Four</div>
+		<div class="five">Five</div><div class="six">Six</div>
+	</div>
+</body>
+</html>
