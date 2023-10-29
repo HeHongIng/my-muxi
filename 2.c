@@ -4,9 +4,7 @@ int f1, f2;
 
 int main(void){
 
-    printf("第一门成绩:");
     scanf("%d", &f1);
-    printf("第二门成绩:");
     scanf("%d", &f2);
 
     switch(f1 >= 60 && f1 <=100 &&f2 >= 60 && f2 <= 100){
